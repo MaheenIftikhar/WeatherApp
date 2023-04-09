@@ -12,7 +12,7 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, op
 	.then(response => response.json())
 	.then((response) => {
 		console.log(response) 
-		
+		cloud_pct.innerHTML=response.cloud_pct
 		temp.innerHTML = response.temp
 		temp2.innerHTML = response.temp2
 		feels_like.innerHTML = response.feels_like
